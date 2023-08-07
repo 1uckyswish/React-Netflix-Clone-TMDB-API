@@ -10,7 +10,7 @@ function Slider({apiKey, baseUrl}) {
     const [upcomingMovies, setUpcomingMovies]=useState([])
     const [index, setIndex]=useState(0)
     const [movieRatings, setMovieRatings]=useState([]);
-    const imageBaseUrl="https://image.tmdb.org/t/p/w500"
+    const imageBaseUrl="https://image.tmdb.org/t/p/original"
 
 
     useEffect (()=>{

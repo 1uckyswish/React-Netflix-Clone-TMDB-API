@@ -68,7 +68,7 @@ const handleLogout=()=>{
       <div className="header-buttons-container">
         <div className="theme-button-container">
 
-             {
+             {/* {
                 darkMode 
                 ? <div className="theme-buttons">
                     <MdOutlineLightMode onClick={handleTheme} className="theme-icon "/>
@@ -78,7 +78,7 @@ const handleLogout=()=>{
                     <MdOutlineLightMode className="theme-icon theme-icon-active"/>
                     <MdOutlineDarkMode onClick={handleTheme} className="theme-icon"/>  
                 </div>
-}        
+}         */}
 </div>
 {
                     token 

@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage/HomePage'
 import MovieDetails from './pages/MovieDetails/MovieDetails';
 import SignIn from './pages/SignIn/SignIn';
 import SignUp from './pages/SignUp/SignUp';
-import MyFavorites from './pages/MyFavorites/MyFavorites';
+// import MyFavorites from './pages/MyFavorites/MyFavorites';
 
 
 
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage apiKey={apiKey} baseUrl={baseUrl} />}/>
         <Route path="/moviedetails/:movieid" element={<MovieDetails serverUrl={serverUrl} baseUrl={baseUrl} apiKey={apiKey}/>}/>
-        <Route path="/myfavorites" element={<MyFavorites serverUrl={serverUrl} baseUrl={baseUrl} apiKey={apiKey}/>}/>
+        {/* <Route path="/myfavorites" element={<MyFavorites serverUrl={serverUrl} baseUrl={baseUrl} apiKey={apiKey}/>}/> */}
         <Route path="/signup" element={<SignUp serverUrl={serverUrl}/>}/>
         <Route path="/signin" element={<SignIn serverUrl={serverUrl}/>}/>
    

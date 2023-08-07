@@ -42,7 +42,7 @@ const handleLogout=()=>{
   return (
     //if true header appears in dark mode else header light mode
     <div className={darkMode ?"header-container":"header-container header-light" }>
-      <Link className="logo" to="/">CineTrail</Link>
+      <Link className="logo" to="/">Netflix</Link>
       <div className="search-container">
 
 

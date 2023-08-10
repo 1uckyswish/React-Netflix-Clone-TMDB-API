@@ -21,8 +21,8 @@ export default function MovieCard({ data, imageUrl, width, height, cardStyle, ra
 
   const handleClick = () => {
     navigate(`/moviedetails/${data.id}`);
-    window.location.reload(); // Auto-refresh the page
-     scrollTo({top: 0, left: 0, behavior: "smooth"})
+    // window.location.reload(); // Auto-refresh the page
+    //  scrollTo({top: 0, left: 0, behavior: "smooth"})
   };
 
   return (

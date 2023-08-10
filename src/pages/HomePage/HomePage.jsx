@@ -1,14 +1,16 @@
-import {useState, useEffect}from 'react'
+import {useState, useEffect, useContext}from 'react'
 import "./home.css"
 import Slider from '../../components/Slider/Slider'
 import axios from 'axios'
 import MovieCard from '../../components/MovieCard/MovieCard'
+import { ThemeContext } from '../../context/ThemeContext';
 
 function HomePage({apiKey, baseUrl}) {
   const [popularMovies, setPopularMovies]=useState([])
   const [topRatedMovies, setTopRatedMovies]=useState([])
   const [page, setPage] = useState(1)
   const pageNumbers=[1,2,3,4,5,6,7,8,9,10];
+   const {darkMode,setDarkMode}=useContext(ThemeContext)
 
 
 useEffect(()=>{
@@ -38,7 +40,7 @@ const handlePage=(page)=>{
 
 
   return (
-    <div className="homepage-container">
+  <div className={darkMode ? "homepage-container" : " home-light"}>
 <Slider apiKey={apiKey} baseUrl={baseUrl} />
 
 <div className="movies-wrapper">

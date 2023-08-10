@@ -10,7 +10,8 @@
 .trailer-container-blank{
     position:relative;
     padding-top:56.25%;
-    color:var(--red);
+    padding-left: 1%;
+   color:rgb(253, 204, 13);
 }
 .trailer-container-blank p{
     background-color:var(--dark-bg)
@@ -18,7 +19,7 @@
 .trailer-player{
     position: absolute;
     top: 0;
-    left: 0; 
+    left: 0;
 }
 .title-container{
     display: flex;
@@ -71,6 +72,10 @@
 .review-container{
     margin-top:20px;
     padding:20px 0;
+}
+
+.review-container p{
+    cursor: pointer;
 }
 
 .reviews-title{

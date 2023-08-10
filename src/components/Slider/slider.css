@@ -9,7 +9,7 @@
   .right-arrow,.left-arrow{
     color:var(--red);
     font-size: 4rem;
-    opacity:0.7;
+    /* opacity:0.7; */
     cursor:pointer;
     position:absolute;
     top:45%;
@@ -30,26 +30,38 @@
     height:35vh;
     position:absolute; 
     bottom:0;
-    width:50%;
-    z-index:1;
+    width: 73%;
+    z-index:0;
     color:var(--white);
     padding:50px 60px;
     margin-bottom:30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    top: 30%;
+    left: 10px;
   }
 
   .slider-info h1,.slider-info p,.slider-info a{
-    margin-top:10px;
+    margin: 8px 0;
+   }
+
+   .slider-info h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+   }
+
+   .slider-info p{
+    font-size: 20px;
    }
    .see-details{
     margin-top:10px;
     cursor:pointer;
     color:var(--white);
    }
-   .see-details:hover{
+ .see-more-btn:hover{
     color:var(--red);
+    cursor: pointer;
    }
 
 

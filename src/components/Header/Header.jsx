@@ -68,7 +68,7 @@ const handleLogout=()=>{
       <div className="header-buttons-container">
         <div className="theme-button-container">
 
-             {/* {
+             {
                 darkMode 
                 ? <div className="theme-buttons">
                     <MdOutlineLightMode onClick={handleTheme} className="theme-icon "/>
@@ -78,28 +78,8 @@ const handleLogout=()=>{
                     <MdOutlineLightMode className="theme-icon theme-icon-active"/>
                     <MdOutlineDarkMode onClick={handleTheme} className="theme-icon"/>  
                 </div>
-}         */}
+}        
 </div>
-{
-                    token 
-                    ? <div className={darkMode ?"profile-container" : "profile-container profile-light" }>
-                        <img src={user.image_url} className="profile-img" onClick={()=>setProfileOptions(!profileOptions)} alt=""/>
-                        <p>Welcome {user.username}<span></span></p>
-                        {
-                            profileOptions
-                            ? <div className="profile-options">
-                                <Link to="/myfavorites">My Favorites</Link>
-                                <p className="logout" onClick={handleLogout}>Logout</p>
-                              </div>
-                            : null
-                        } 
-                        
-                        
-                     </div>
-                    : <div>
-                  <button className="create-account-btn" onClick={()=>navigate('/signup')}>Create an account</button>
-        </div>
-}
       </div>
     </div>
   )

@@ -9,10 +9,11 @@
     padding:5px;
     color:var(--red);
     /* font-size: 48px;  */ 
+    text-align: center;
 }
 .movie-info-bottom{
     visibility: hidden;
-    height:50px;
+    height:auto;
     width:100%;
     position:absolute;
     bottom:0;
@@ -22,15 +23,24 @@
     align-items: center;
     justify-content: center;
     color:var(--white);
+    flex-wrap: wrap;
+}
+
+.movie-info-bottom p{
+    text-align: center;
+}
+
+.movie-info-bottom p:last-child{
+     color:rgb(253, 204, 13);
 }
 
 .popular-card:hover .movie-info-top{
     visibility: visible;
-    animation: myAnim 2s ease 0s 1 normal forwards;
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
 .popular-card:hover .movie-info-bottom{
     visibility: visible;
-    animation: myAnim 2s ease 0s 1 normal forwards;
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 .top-rated-card{

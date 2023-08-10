@@ -20,9 +20,7 @@ useEffect(()=>{
         {moviesGenres?.map((id, index)=>{
         const genre = allGenres.find((genre)=> genre.id === id);
         return(
-            <p key={id}>
-                {genre?.name}
-                {index !==moviesGenres.length - 1  && ','}
+            <p key={id}><span>&nbsp;</span>{genre?.name}{index !== moviesGenres.length - 1  && ','}
             </p>
         )
         })}

@@ -16,11 +16,14 @@
 .popular-container{ 
     display: flex;
     flex-direction:column;
-    padding:0 20px;
+    padding:0 15px;
 }
 .popular-cards-wrapper{
     display: flex;
     flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-top:20px;
+    align-items: center;
 }
 
 .page-numbers{
@@ -57,6 +60,14 @@
     -webkit-box-shadow: -11px 2px 33px 1px rgba(8,7,7,0.75);
     -moz-box-shadow: -11px 2px 33px 1px rgba(8,7,7,0.75);
 }
+
+.page-numbers{
+    cursor:pointer;
+    color:var(--white);
+   }
+   .page-numbers p:hover{
+    color:var(--red);
+   }
 
  
 @media(max-width:768px){

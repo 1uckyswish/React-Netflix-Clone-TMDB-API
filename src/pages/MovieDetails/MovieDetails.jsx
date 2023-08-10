@@ -61,31 +61,31 @@ export default function MovieDetails({baseUrl,apiKey, serverUrl}) {
 
 
 
-const addToFavorites=()=>{
-  console.log(serverUrl)
-  if(!token){
-     alert('Please login to add a movie to your favorites.')
-  }else{
-    axios.post(`${serverUrl}favoriteMovies`,{
-      user_id:user._id,
-      movie_id:movie.id
-    })
-    .then(res=>{
-      setAdded(true)
-    })
-    .catch(err=>console.log(err))
-  }
+// const addToFavorites=()=>{
+//   console.log(serverUrl)
+//   if(!token){
+//      alert('Please login to add a movie to your favorites.')
+//   }else{
+//     axios.post(`${serverUrl}favoriteMovies`,{
+//       user_id:user._id,
+//       movie_id:movie.id
+//     })
+//     .then(res=>{
+//       setAdded(true)
+//     })
+//     .catch(err=>console.log(err))
+//   }
 
-}
+// }
 
-const removeFromFavorites=()=>{
-  axios.delete(`${serverUrl}favoriteMovies/${user._id}/${movie.id}`)
-  .then(res=>{
-    console.log(res.data)
-    setAdded(false)
-  })
-  .catch(err=>console.log(err))
-}
+// const removeFromFavorites=()=>{
+//   axios.delete(`${serverUrl}favoriteMovies/${user._id}/${movie.id}`)
+//   .then(res=>{
+//     console.log(res.data)
+//     setAdded(false)
+//   })
+//   .catch(err=>console.log(err))
+// }
 
 useEffect(() => {
   axios.post(`${serverUrl}favoriteMovies/search`,{ 
@@ -116,25 +116,26 @@ return (
         // playing
         width='100%'
         height='100%'
+        controls={true}
       />
   </div>
   : <div className="trailer-container-blank" style={{
-    backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+    backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.poster_path}")`,
     backgroundPosition:"center",
     backgroundSize:"cover"
-    }}><p>No Trailers Released Yet</p></div> 
+    }}><h1>No Trailers Released Yet</h1></div> 
 }
 
   <div className={darkMode ?"details-container" :"details-container details-light" }>
         <div className="title-container">
           <h1>{movie.title}</h1>
-          {
+          {/* {
             added 
             ? <span className="remove-btn" onClick={removeFromFavorites}>Remove from favorites.</span> 
             : <span className="add-btn" onClick={addToFavorites}>Add to favorites.</span>
-          }
+          } */}
         </div>
-        <Ratings movieRating={movieRating}/>
+        <Ratings movieRating={movieRating} />
         <div className="info-container">
            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="details-poster"/>
            <div className="movie-info">

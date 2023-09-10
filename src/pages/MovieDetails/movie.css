@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .movie-details-container{
     margin-top:var(--header-height);
     min-height:100vh; 
+}
+
+.movie-details-container p,h2, h3, h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
 }
 
 .trailer-container{

@@ -1,9 +1,12 @@
+
+
 .homepage-container{
     margin-top:var(--header-height);
     color:var(--white);
     min-height:100vh; 
     padding-bottom:20px;
 }
+
 .home-light{
     background-color: var(--light-bg);
     color:black;
@@ -64,6 +67,7 @@
 .page-numbers{
     cursor:pointer;
     color:var(--white);
+    font-size: 1.5em;
    }
    .page-numbers p:hover{
     color:var(--red);

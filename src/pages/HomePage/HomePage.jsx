@@ -57,7 +57,7 @@ const handlePage=(page)=>{
 
 
   </div>
-<div className="page-numbers">
+<div className="page-numbers" style={darkMode? {color: "white"}: {color: "black"}}>
 <p> Select Page</p>
 {pageNumbers.map((item) =>(
   <p className={item === 'page ? "current-page" : "page'}

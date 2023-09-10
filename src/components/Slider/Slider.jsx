@@ -16,7 +16,7 @@ function Slider({apiKey, baseUrl}) {
     const handlePage=()=>{
     scrollTo({top: 0, left: 0, behavior: "smooth"})
     navigate(`/moviedetails/${upcomingMovies[index]?.id}`)
-    window.location.reload(); // Auto-refresh the page
+    // window.location.reload(); // Auto-refresh the page
 }
 
     useEffect (()=>{
